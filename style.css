@@ -78,45 +78,115 @@ select {
 }
 .container {
     margin: 0 auto;
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: 2031px;
+    background-color: #0F0B13;
+}
+.bg {
+    position: absolute;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 720px;
+    background: rgba(15, 11, 13, 1) url(img/Background.png) no-repeat center;
+    background-size: 1280px 720px;
+    opacity: 75%;
 }
 .upper-page {
     position: relative;
     left: 0px;
     margin: 0 auto;
-    width: 1280px;
+    max-width: 1280px;
     height: 720px;
-    background: rgba(15, 11, 13, 1) url(img/Background.png) no-repeat center;
-    background-size: 1920px 1080px;
+    
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #0F0B13;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+    
+}
+.bg2 {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2031px;
+    background-image: url(img/dbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 2031px;
+    z-index: -1;
 }
 
 header {
+    padding: 10px;
     font-weight: 300;
     font-size: 32px;
     padding-top: 58px;
     width: 100%;
-    max-width: 767px;
+    max-width: 768px;
     text-align: center;
     margin: 0 auto;
 }
 
 .nav-links,
 .nav-links a{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     color: #fff;
     display: flex;
     text-decoration: none;
     list-style-type: none;
     justify-content: space-between;
 }
-
+main {
+    position: relative;
+    margin: 172px auto;
+    width: 562px;
+    height: 393px;
+}
 .logo-img {
-    margin: 50% 50%;
-    width: 180px;
-    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    width: 192px;
+    height: 192px;
+}
+main p {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    font-size: 72px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    top: 129px;
+}
+
+.greetings{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 54px;
+    max-width: 1050px;
+    height: 445px;
+}
+.greetings h1 {
+    font-weight: 500;
+}
+.gr-desc {
+    position: relative;
+    top: 36px;
+    font-weight: 400;
+}
+
+.connect-btn{
+    position: relative;
+    top: 82px;
+    text-decoration: none;
+    color: #fff;
 }
