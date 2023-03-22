@@ -153,6 +153,8 @@ main {
 .logo-img {
     margin: 0 auto;
     position: relative;
+    left: 10px;
+    bottom: 10px;
     width: 192px;
     height: 192px;
 }
